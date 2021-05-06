@@ -16,7 +16,7 @@ const App = () => {
 
   //Get Race results from API 
   useEffect(() => {
-    axios.get('http://ergast.com/api/f1/current/last/results.json')
+    axios.get('https://ergast.com/api/f1/current/last/results.json')
       .then((response) => setRaceResults(response.data.MRData.RaceTable.Races[0]))
       .catch((error) => console.log(error));
   }, [])
