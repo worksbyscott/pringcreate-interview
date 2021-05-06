@@ -1,4 +1,4 @@
-import { prism, PrismComponent } from 'prism-animation'
+import { prism } from 'prism-animation'
 import { ReactComponent as Logo } from "../../styles/assets/logo.svg"
 import { useEffect } from 'react'
 

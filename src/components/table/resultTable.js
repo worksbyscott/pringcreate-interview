@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-
 const ResultsTable = (raceData) => {
 
     const getDriveResults = () => raceData.raceData.sort((a, b) => a.position - b.position);

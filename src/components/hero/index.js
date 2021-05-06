@@ -22,7 +22,7 @@ const HeroImage = (raceData) => {
                     </div>
                     <div className="hero-overlay" />
                     <div className="hero-wrapper">
-                        <img src={Hero}></img>
+                        <img alt="" src={Hero}></img>
                     </div>
 
                 </div>
