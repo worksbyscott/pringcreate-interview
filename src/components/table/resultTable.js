@@ -2,8 +2,8 @@ const ResultsTable = (raceData) => {
 
     const getDriveResults = () => raceData.raceData.sort((a, b) => a.position - b.position);
 
-    const generateRows = () => {
-        return getDriveResults().map(driver => (
+    const generateRows = () =>
+        getDriveResults().map(driver => (
             <tr key={driver.id}>
                 <td>{driver.position}</td>
                 <td>{driver.Driver.givenName + driver.Driver.familyName}</td>
@@ -11,7 +11,6 @@ const ResultsTable = (raceData) => {
                 <td>{driver.points}</td>
             </tr>
         ))
-    }
 
     return (
         <table>

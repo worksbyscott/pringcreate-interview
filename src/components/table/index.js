@@ -1,29 +1,15 @@
 import { useEffect } from 'react'
 import ResultsTable from './resultTable'
-import { prism } from 'prism-animation'
+
+
+import { tableAnimation } from '../../animations/components/table'
 
 const Table = (raceData) => {
 
-    const getRaceName = () => {
-        return raceData.raceData.raceName;
-    }
+    const getRaceName = () => raceData.raceData.raceName;
+    const getRaceDate = () => raceData.raceData.date;
 
-    const getRaceDate = () => {
-        return raceData.raceData.date;
-    }
-
-    useEffect(() => {
-
-        prism(".results", {
-            opacity: 1,
-            delay: 700,
-            duration: 1000,
-            easing: "inOutCubic",
-        })
-
-    }, [])
-
-
+    useEffect(() => tableAnimation(), [])
 
     return (
         <div className="container">

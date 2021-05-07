@@ -1,22 +1,10 @@
 import { ReactComponent as Logo } from '../styles/assets/logo.svg'
 import { useEffect } from 'react'
-import { prism } from 'prism-animation';
+import { navAnimation } from "../animations/components/navigation";
 
 const Navigation = () => {
 
-    useEffect(() => {
-        prism("nav", {
-            height: "160px",
-            duration: 500,
-            easing: "inOutCubic",
-        });
-        prism(".nav-logo", {
-            opacity: 1,
-            delay: 450,
-            duration: 500,
-            easing: "inOutCubic"
-        })
-    }, [])
+    useEffect(() => navAnimation(), [])
 
     return (
         <nav>

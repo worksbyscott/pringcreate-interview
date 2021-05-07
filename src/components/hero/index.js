@@ -1,17 +1,10 @@
 import Hero from '../../styles/assets/Portugal.jpg'
 import { useEffect } from 'react'
-import { prism } from 'prism-animation';
+import { heroAnimation } from '../../animations/components/hero'
 
 const HeroImage = (raceData) => {
 
-    useEffect(() => {
-        prism(".hero-image", {
-            opacity: 1,
-            delay: 600,
-            duration: 800,
-            easing: "inOutCubic",
-        })
-    }, [])
+    useEffect(() => heroAnimation(), [])
 
     return (
         <div className="container">
